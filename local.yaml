@@ -1,0 +1,12 @@
+---
+- name: Install default App for Ubuntu
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update apt
+      apt:
+        update_cache: yes
+    - include: tasks/apt/install-tldr.yaml
+    - include: tasks/apt/install-htop.yaml
+    - include: tasks/apt/install-docker.yaml
+    - include: tasks/apt/install-openjdk.yaml

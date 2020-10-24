@@ -1,0 +1,10 @@
+---
+- name: Install openjdk
+  apt:
+    name: default-jdk
+    state: latest
+- name: Check java version
+  shell: java -version
+  register: openjdk_version
+- debug: 
+    msg: "{{openjdk_version}}"

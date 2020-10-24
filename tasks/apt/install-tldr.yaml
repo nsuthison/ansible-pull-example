@@ -1,0 +1,5 @@
+---
+- name: Install tldr
+  apt:
+    name: tldr
+    state: latest
