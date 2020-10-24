@@ -10,4 +10,4 @@ Just an example for ansible-pull
 ansible-pull -U https://github.com/nsuthison/ansible-pull-example.git -C main -i hosts local.yaml
 ```
 
-Note: Default playbook for ansible-pull is _local.yml_. In this repo, I use _local.yaml_ instead so I need to specific the playbook name param.
+Note: Default playbook for ansible-pull is _local.yml_. In this repo, I use _local.y*a*ml_ instead so I need to specific the playbook name param.
